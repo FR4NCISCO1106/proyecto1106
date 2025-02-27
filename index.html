@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="short icon" href="./imagenes/torneo-de-juegos.png">
+  <title>Ctrl+Win-registro</title>
+</head>
+<body>
+
+
+  <div class="container">
+    <div class="container-form">
+      <form class="Sign-in">
+        <h2>Iniciar Sesión</h2>
+        <div class="social-networks">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+        </div>
+          <span>Use su correo electronico y contraseña</span>
+          <div class="container-input">
+            <ion-icon name="mail"></ion-icon>
+            <input type="text" placeholder="Email">
+          </div>
+          <div class="container-input">
+            <ion-icon name="lock-closed"></ion-icon>
+            <input type="password" placeholder="Password">
+          </div>
+          <a href="">¿Olvidaste tu contraseña?</a>
+          <button class="button">INICIAR SESIÓN</button>
+      </form>
+    </div>
+
+    <div class="container-form">
+      <form class="Sign-up">
+        <h2>¡Registrate!</h2>
+        <div class="social-networks">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+        </div>
+          <span>Use su correo electronico para registrarse</span>
+          <div class="container-input">
+            <ion-icon name="person"></ion-icon>
+            <input type="text" placeholder="Nombre">
+          </div>
+          <div class="container-input">
+            <ion-icon name="mail"></ion-icon>
+            <input type="text" placeholder="Email">
+          </div>
+          <div class="container-input">
+            <ion-icon name="lock-closed"></ion-icon>
+            <input type="password" placeholder="Password">
+          </div>
+          
+          <button class="button">REGISTRARSE</button>
+      </form>
+    </div>
+
+    <div class="container-welcome">
+      <div class="welcome-sign-up welcome">
+        <h3>¡Bienvenido!</h3>
+        <p>Ingrese sus datos personales para usar todas las funciones del sitio</p>
+        <button class="button" id="btn-Sign-up">Registrarse</button>
+      </div>
+      <div class="welcome-sign welcome">
+        <h3>¡Hola!</h3>
+        <p>Regístrate con tus datos personales para usar todas las funciones del sitio</p>
+        <button class="button" id="btn-Sign-in">Iniciar Sesión</button>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="Script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

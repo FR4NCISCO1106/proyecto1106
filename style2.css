@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+
+*,
+*::after
+*::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  font-family: "Oswald", serif;
+}
+
+body{
+  font-family: oswald;
+  background-color: gray;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(1, 1, 1, 0.7);
+padding: 0px 10%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+z-index: 1000;
+}
+
+.logo{
+  font-size:30px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  margin: 0;
+}
+
+.img{
+  margin-top: 20px;
+}
+
+.navegation ul{
+  list-style: none;
+}
+
+.header .navegation ul li{
+  float: left;
+  position: relative;
+}
+
+.header .navegation ul li a{
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+  transition: all .2s ease;
+}
+
+.header .navegation ul li a:hover{
+  background-color: blueviolet;
+}
+
+.header .navegation ul li ul{
+  position: absolute;
+  right: 0;
+  width: 300px;
+  background-color: rgb(1, 1, 1, 0.7);
+  display: none;
+}
+
+.header .navegation ul li ul li a{
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.header .navegation ul li ul li ul{
+  position: absolute;
+  top: 0;
+  right: 300px;
+}
+
+.header .navegation ul li ul li{
+  width: 100%;
+}
+
+.header .navegation ul li:hover > ul{
+  display: initial;
+}
+
+#toggle
+.header label{
+  display: none;
+  cursor: pointer;
+}
+
+.menu{
+  width: 45px;
+  height: 35px;
+}
+
+@media(max-width:950px) {
+  .header label{
+    display: initial;
+  }
+
+  .header{
+    padding: 20px 10%;
+  }
+
+  .header .navegation{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgb(1, 1, 1, 0.7);
+    display: none;
+  }
+
+  .header .navegation ul li{
+    width: 100%;
+  }
+
+  .header .navegation ul li a{
+    padding: 8px 30px 8px 10%;
+  }
+
+  .header .navegation ul li ul{
+    position: relative;
+    width: 100%;
+    left:0;
+  }
+
+  .header .navegation ul li ul li{
+  background-color: rgb(1, 1, 1, 0.7);
+    }
+    
+    .header .navegation ul li ul li ul{
+      position: relative;
+      width: 100%;
+      left: 0;
+    }
+
+    #toggle:checked ~ .navegation{
+      display: block;
+    }
+  }
+
+  .hero{
+    min-height: 100vh;
+    background-image:url("imagenes/imagen\ pagina.png") ;
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+  }
