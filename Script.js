@@ -1,6 +1,6 @@
-const container = document.querySelector(".container")
-const btnSignIn = document.getElementById("btn-Sign-in")
-const btnSignUp = document.getElementById("btn-Sign-up")
+const container = document.querySelector(".container");
+const btnSignIn = document.getElementById("btn-Sign-in");
+const btnSignUp = document.getElementById("btn-Sign-up");
 
 btnSignIn.addEventListener("click",()=>{
   container.classList.remove("toggle");

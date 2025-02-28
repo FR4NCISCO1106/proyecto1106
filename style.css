@@ -13,25 +13,27 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #f0f4f3;
 }
 
 .container{
-  border: 2px solid black;
   width: 800px;
   height: 500px;
   display: flex;
   flex-direction: row;
   position: relative;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
 }
 
 .container-form{
-  border: 2px solid forestgreen;
   width: 100%;
   overflow: hidden;
 }
 
 .container-form form{
-  border: 2px solid red;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -124,6 +126,15 @@ body{
   align-items: center;
   transform: translateX(100%);
   background-color: #3ab397;
+  transition: transform 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+  overflow: hidden;
+  border-radius: 50% 0 0 50%;
+}
+
+.container.toggle .container-welcome{
+  transform: translateX(0);
+  border-radius: 0 50% 50% 0;
+  background-color: #3aa8ad;
 }
 
 .container-welcome .welcome{
@@ -134,9 +145,10 @@ body{
   gap: 20px;
   padding: 0 50px;
   color: white;
+  transition: transform 0.5s ease-in-out;
 }
 
-.welcome-Sign-in{
+.welcome-sign-in{
   transform: translateX(100%);
 }
 
@@ -151,12 +163,13 @@ body{
 
 .container-welcome .button{
   border: 2px solid white;
+  background-color: transparent;
 }
 
-.container.toggle .welcome-Sign-in{
+.container.toggle .welcome-sign-in{
   transform: translateX(0);
 }
 
-.container.toggle .welcome-Sign-up{
+.container.toggle .welcome-sign-up{
   transform: translateX(-100%);
 }
